@@ -17,9 +17,10 @@
     "build": "vite build",
     "dev": "vite",
     "lint": "eslint .",
-    "lint:fix": "nr lint --fix",
+    "lint:fix": "pnpm run lint --fix",
     "prepare": "simple-git-hooks",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint-staged"
