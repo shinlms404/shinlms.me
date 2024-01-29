@@ -1,16 +1,14 @@
 <script setup>
 import { ref } from 'vue'
 
-defineProps({
-  msg: String
-})
-
 const count = ref(0)
 </script>
 
 <template>
-  <h1>{{ msg }}</h1>
   <h1 class="text-3xl font-bold underline">Hello world!</h1>
+  <router-link to="/sub">sub page</router-link>
+  <br />
+  <router-link to="/">index</router-link>
 
   <div class="card">
     <button type="button" @click="count++">count is {{ count }}</button>
